@@ -581,6 +581,7 @@ footer .foot{
   }
   footer .foot{
     flex-direction: row;
+		justify-content: center;
   }
 }
 
