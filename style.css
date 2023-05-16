@@ -743,7 +743,7 @@ nav {
 
 .phoneText {
 	font-size: 13px;
-	color: var(--white);
+	color: var(--white) !important;
 	text-align: center;
 }
 
