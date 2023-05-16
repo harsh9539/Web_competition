@@ -762,7 +762,7 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 296px) {
+@media only screen and (max-width: 400px) {
 	/* header {
 		display: none;
 	} */
@@ -782,8 +782,12 @@ nav {
 	}
 
 	#Hero {
-		padding-top: 30px;
+		padding-top: 100px;
 		background-size: cover;
 		background-position: center;
+	}
+
+	.gap-more {
+		gap: 15px;
 	}
 }
