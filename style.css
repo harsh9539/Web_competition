@@ -13,6 +13,7 @@ html{
 body{
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+  background-color: #F7F8FA;
 }
 
 :root{
@@ -25,4 +26,5 @@ body{
   --normal:16px;
   --large:24px;
   --heading:36px;
+  --color:#002881;
 }
