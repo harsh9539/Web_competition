@@ -429,7 +429,7 @@ body {
     margin: 5rem 2rem;
   }
   .testimonial .background_font {
-    font-size: calc(var(--back_font) - 8rem);
+    font-size: calc(var(--back_font) - 9.3rem);
   }
   .testimonial h2 {
     font-size: calc(var(--large) - 1px);
