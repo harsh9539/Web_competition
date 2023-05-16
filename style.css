@@ -49,7 +49,6 @@ body {
   align-items: center;
 }
 .our_story button {
-  cursor: pointer;
   background-color: var(--green_background);
   border: none;
   outline: none;
@@ -114,7 +113,6 @@ body {
   align-items: center;
 }
 .services button {
-  cursor: pointer;
   background-color: var(--blue_background);
   border: none;
   outline: none;
@@ -177,7 +175,6 @@ body {
   align-items: center;
 }
 .testimonial button {
-  cursor: pointer;
   background-color: var(--blue_background);
   border: none;
   outline: none;
@@ -267,7 +264,6 @@ body {
   align-items: center;
 }
 .instagram button {
-  cursor: pointer;
   background-color: var(--green_background);
   border: none;
   outline: none;
@@ -327,7 +323,6 @@ body {
   align-items: center;
 }
 .contact button {
-  cursor: pointer;
   background-color: var(--blue_background);
   border: none;
   outline: none;
@@ -364,12 +359,12 @@ body {
 }
 .contact form .input {
   background-color: white;
-  padding: 2rem 3rem;
+  padding: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 50px;
-  width: 100%;
+  width: 300px;
 }
 .contact form button {
   cursor: pointer;
@@ -386,6 +381,7 @@ body {
   border: none;
   outline: none;
   /* padding: 15px; */
+  width: 100%;
 }
 
 /* contact css end  */
