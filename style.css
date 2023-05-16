@@ -450,6 +450,27 @@ body {
 
 /* contact css end  */
 
+footer{
+  margin: 2rem;
+}
+footer div{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div p{
+  font-size: calc(var(--large) - 5px);
+  color: var(--color);
+  opacity: 0.5;
+  font-weight: 700;
+}
+footer .foo{
+  margin: 0 12rem;
+}
+footer .foot{
+  display: flex;
+  gap: 20px;
+}
 @media screen and (max-width: 990px) {
 	.our_story {
 		margin: 5rem 2rem;
@@ -546,6 +567,17 @@ body {
 	.contact .card img {
 		width: 100%;
 	}
+  footer .foo{
+		margin: 5rem 0rem;
+	}
+  footer div{
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .foot{
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 640px) {
