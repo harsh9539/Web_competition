@@ -28,3 +28,10 @@ body{
   --heading:36px;
   --color:#002881;
 }
+
+
+
+.our_story{
+  display: flex;
+  
+}
