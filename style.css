@@ -8,10 +8,10 @@
 
 html{
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body{
-  margin: 0 60px;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #F7F8FA;
@@ -19,20 +19,334 @@ body{
 
 :root{
   --green:#29cc39;
+  --green_background:#29cc391d;
   --blue:#3361ff;
-  --blue_background:#3361ffe1;
+  --blue_background:#3363ff1f;
   --orange:#ff6633;
   --orange_background:#ff6633e1;
-  --small:14px;
-  --normal:16px;
-  --large:24px;
-  --heading:36px;
+  --small:1.4rem;
+  --normal:1.6rem;
+  --large:2.4rem;
+  --heading:3.6rem;
+  --back_font:15rem;
   --color:#002881;
+  --shadow:2px 2px 20px rgba(0,0,0,.2);
+  --shadow-who:2px 2px 20px rgba(0,0,0,.2);
 }
 
 
-
+/* our story css  */
 .our_story{
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+}
+.our_story > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our_story button{
+  background-color: var(--green_background);
+  border: none;
+  outline: none;
+  color: var(--green);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.our_story .back_font_container{
+  position: relative;
+}
+.our_story h2{
+  font-size: var(--heading);
+}
+.our_story .background_font{
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.09;
+}
+.our_story p{
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+.our_story .card_container{
+  gap: 2rem;
+}
+.our_story .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 16rem;
+  width: 35rem;
+  gap: 2rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.our_story .card:hover{
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+/* our story css end  */
+
+/* services css  */
+.services{
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+}
+.services > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services button{
+  background-color: var(--blue_background);
+  border: none;
+  outline: none;
+  color: var(--blue);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.services .back_font_container{
+  position: relative;
+}
+.services h2{
+  font-size: var(--heading);
+}
+.services .background_font{
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.09;
+}
+.services p{
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+.services .card_container{
+  margin: 0 10rem;
+}
+.services .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.services .card img{
+  width: 80%;
+}
+.services .card p{
+  margin-top: -40px;
+  font-weight: 700;
+}
+
+/* services css end  */
+
+/* testimonial css  */
+.testimonial{
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+}
+.testimonial > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial button{
+  background-color: var(--blue_background);
+  border: none;
+  outline: none;
+  color: var(--blue);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.testimonial .back_font_container{
+  position: relative;
+}
+.testimonial h2{
+  font-size: var(--heading);
+}
+.testimonial .background_font{
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.09;
+}
+.testimonial p{
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+.testimonial .card_container{
+  margin: 0 10rem;
+}
+.testimonial .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.testimonial .card img{
+  width: 80%;
+}
+.testimonial .card p{
+  margin-top: -40px;
+  font-weight: 700;
+}
+
+/* testimonial css end  */
+
+
+/* instagram css  */
+.instagram{
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+}
+.instagram > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram button{
+  background-color: var(--green_background);
+  border: none;
+  outline: none;
+  color: var(--green);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.instagram .back_font_container{
+  position: relative;
+}
+.instagram h2{
+  font-size: var(--heading);
+}
+.instagram .background_font{
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.05;
+}
+.instagram p{
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+.instagram .card_container{
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10rem;
+  flex-direction: column;
+  gap: 30px;
+}
+.instagram .card_container .img_container{
+  display: flex;
+  gap: 40px ;
+}
+
+/* instagram css end  */
+
+@media screen and (max-width:990px) {
+  .our_story{
+    margin: 5rem 2rem;
+  }
+  .our_story .background_font{
+    font-size: calc(var(--back_font) - 8rem);
+  }
+  .our_story h2{
+    font-size: calc(var(--large));
+  }
+  .our_story p{
+    width: 80%;
+  }
+  .our_story .card_container{
+    flex-direction: column;
+  }
+  .services{
+    margin: 5rem 2rem;
+  }
+  .services .background_font{
+    font-size: calc(var(--back_font) - 8rem);
+  }
+  .services h2{
+    font-size: calc(var(--large) - 1px);
+  }
+  .services p{
+    width: 80%;
+  }
+  .services .card_container{
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .services .card img{
+    width: 100%;
+  }
+  .instagram{
+    margin: 5rem 2rem;
+  }
+  .instagram .background_font{
+    font-size: calc(var(--back_font) - 8rem);
+  }
+  .instagram h2{
+    font-size: calc(var(--large) - 1px);
+  }
+  .instagram p{
+    width: 80%;
+  }
+  .instagram .card_container{
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .instagram .img_container{
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+}
+
+@media screen and (max-width:640px) {
+  .our_story p{
+    width: 100%;
+  }
+  .services .card_container{
+    margin: 0;
+    flex-direction: column;
+  }
+  .services p{
+    width: 100%;
+  }
 }
