@@ -16,6 +16,10 @@ body {
 	background-color: #f7f8fa;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 :root {
 	--green: #29cc39;
 	--green_background: #29cc391d;
