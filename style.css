@@ -22,7 +22,7 @@ body {
   --blue: #3361ff;
   --blue_background: #3363ff1f;
   --orange: #ff6633;
-  --orange_background: #ff6633e1;
+  --orange_background: #ff66331c;
   --small: 1.4rem;
   --normal: 1.6rem;
   --large: 2.4rem;
@@ -159,6 +159,50 @@ body {
 
 /* services css end  */
 
+/* deals css  */
+.deals {
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+}
+.deals > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deals button {
+  background-color: var(--orange_background);
+  border: none;
+  outline: none;
+  color: var(--orange);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+.deals .back_font_container {
+  position: relative;
+}
+.deals h2 {
+  font-size: var(--heading);
+}
+.deals .background_font {
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.05;
+}
+.deals p {
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+
+/* deals css end  */
 /* testimonial css  */
 .testimonial {
   margin: 5rem 12rem;
@@ -301,7 +345,28 @@ body {
 .instagram .card_container .img_container {
   display: flex;
   gap: 40px;
+  transition: all 0.5s linear;
 }
+.instagram .card_container .img{
+  position: relative;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.instagram .card_container .img:hover:after{
+  transition: all 0.5s linear;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
 
 /* instagram css end  */
 
