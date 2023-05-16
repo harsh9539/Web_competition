@@ -1,42 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-html{
+html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
-body{
+body {
   width: 100%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F7F8FA;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f8fa;
 }
 
-:root{
-  --green:#29cc39;
-  --green_background:#29cc391d;
-  --blue:#3361ff;
-  --blue_background:#3363ff1f;
-  --orange:#ff6633;
-  --orange_background:#ff6633e1;
-  --small:1.4rem;
-  --normal:1.6rem;
-  --large:2.4rem;
-  --heading:3.6rem;
-  --back_font:15rem;
-  --color:#002881;
-  --shadow:2px 2px 20px rgba(0,0,0,.2);
-  --shadow-who:2px 2px 20px rgba(0,0,0,.2);
+:root {
+  --green: #29cc39;
+  --green_background: #29cc391d;
+  --blue: #3361ff;
+  --blue_background: #3363ff1f;
+  --orange: #ff6633;
+  --orange_background: #ff6633e1;
+  --small: 1.4rem;
+  --normal: 1.6rem;
+  --large: 2.4rem;
+  --heading: 3.6rem;
+  --back_font: 15rem;
+  --color: #002881;
+  --shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  --shadow-who: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 /* our story css  */
-.our_story{
+.our_story {
   margin: 5rem 12rem;
   display: flex;
   flex-direction: column;
@@ -45,12 +43,13 @@ body{
   gap: 5rem;
   color: var(--color);
 }
-.our_story > div{
+.our_story > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.our_story button{
+.our_story button {
+  cursor: pointer;
   background-color: var(--green_background);
   border: none;
   outline: none;
@@ -59,27 +58,27 @@ body{
   padding: 1rem;
   font-weight: 900;
 }
-.our_story .back_font_container{
+.our_story .back_font_container {
   position: relative;
 }
-.our_story h2{
+.our_story h2 {
   font-size: var(--heading);
 }
-.our_story .background_font{
+.our_story .background_font {
   position: absolute;
   font-size: var(--back_font);
-  opacity: 0.09;
+  opacity: 0.05;
 }
-.our_story p{
+.our_story p {
   font-size: var(--small);
   width: 60%;
   text-align: center;
   line-height: 2rem;
 }
-.our_story .card_container{
+.our_story .card_container {
   gap: 2rem;
 }
-.our_story .card{
+.our_story .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +91,7 @@ body{
   cursor: pointer;
 }
 
-.our_story .card:hover{
+.our_story .card:hover {
   transform: scale(1.05);
   box-shadow: var(--shadow);
 }
@@ -100,7 +99,7 @@ body{
 /* our story css end  */
 
 /* services css  */
-.services{
+.services {
   margin: 5rem 12rem;
   display: flex;
   flex-direction: column;
@@ -109,12 +108,13 @@ body{
   gap: 5rem;
   color: var(--color);
 }
-.services > div{
+.services > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.services button{
+.services button {
+  cursor: pointer;
   background-color: var(--blue_background);
   border: none;
   outline: none;
@@ -123,27 +123,27 @@ body{
   padding: 1rem;
   font-weight: 900;
 }
-.services .back_font_container{
+.services .back_font_container {
   position: relative;
 }
-.services h2{
+.services h2 {
   font-size: var(--heading);
 }
-.services .background_font{
+.services .background_font {
   position: absolute;
   font-size: var(--back_font);
-  opacity: 0.09;
+  opacity: 0.05;
 }
-.services p{
+.services p {
   font-size: var(--small);
   width: 60%;
   text-align: center;
   line-height: 2rem;
 }
-.services .card_container{
+.services .card_container {
   margin: 0 10rem;
 }
-.services .card{
+.services .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,10 +151,10 @@ body{
   transition: all 0.2s linear;
   cursor: pointer;
 }
-.services .card img{
+.services .card img {
   width: 80%;
 }
-.services .card p{
+.services .card p {
   margin-top: -40px;
   font-weight: 700;
 }
@@ -162,7 +162,7 @@ body{
 /* services css end  */
 
 /* testimonial css  */
-.testimonial{
+.testimonial {
   margin: 5rem 12rem;
   display: flex;
   flex-direction: column;
@@ -171,12 +171,13 @@ body{
   gap: 5rem;
   color: var(--color);
 }
-.testimonial > div{
+.testimonial > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.testimonial button{
+.testimonial button {
+  cursor: pointer;
   background-color: var(--blue_background);
   border: none;
   outline: none;
@@ -185,47 +186,73 @@ body{
   padding: 1rem;
   font-weight: 900;
 }
-.testimonial .back_font_container{
+.testimonial .back_font_container {
   position: relative;
 }
-.testimonial h2{
+.testimonial h2 {
   font-size: var(--heading);
 }
-.testimonial .background_font{
+.testimonial .background_font {
   position: absolute;
   font-size: var(--back_font);
-  opacity: 0.09;
+  opacity: 0.05;
 }
-.testimonial p{
+.testimonial p {
   font-size: var(--small);
   width: 60%;
   text-align: center;
   line-height: 2rem;
 }
-.testimonial .card_container{
+.testimonial .card_container {
   margin: 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
 }
-.testimonial .card{
+.testimonial .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   transition: all 0.2s linear;
   cursor: pointer;
+  gap: 20px;
+  border-radius: 40px;
 }
-.testimonial .card img{
-  width: 80%;
+.testimonial .card_container .card .text_contain {
+  background-color: white;
+  height: 16rem;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.testimonial .card p{
-  margin-top: -40px;
-  font-weight: 700;
+.testimonial .card_container .card .text_contain p {
+  font-weight: 500;
+  line-height: 20px;
 }
-
+.testimonial .user {
+  margin: 0 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .user .img_contain {
+  border-radius: 100px;
+  overflow: hidden;
+}
+.testimonial .user h3 {
+  font-size: calc(var(--large) - 10px);
+}
+.testimonial .user p {
+  font-size: var(--nomral);
+}
 /* testimonial css end  */
 
-
 /* instagram css  */
-.instagram{
+.instagram {
   margin: 5rem 12rem;
   display: flex;
   flex-direction: column;
@@ -234,12 +261,13 @@ body{
   gap: 5rem;
   color: var(--color);
 }
-.instagram > div{
+.instagram > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.instagram button{
+.instagram button {
+  cursor: pointer;
   background-color: var(--green_background);
   border: none;
   outline: none;
@@ -248,24 +276,24 @@ body{
   padding: 1rem;
   font-weight: 900;
 }
-.instagram .back_font_container{
+.instagram .back_font_container {
   position: relative;
 }
-.instagram h2{
+.instagram h2 {
   font-size: var(--heading);
 }
-.instagram .background_font{
+.instagram .background_font {
   position: absolute;
   font-size: var(--back_font);
   opacity: 0.05;
 }
-.instagram p{
+.instagram p {
   font-size: var(--small);
   width: 60%;
   text-align: center;
   line-height: 2rem;
 }
-.instagram .card_container{
+.instagram .card_container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -274,79 +302,201 @@ body{
   flex-direction: column;
   gap: 30px;
 }
-.instagram .card_container .img_container{
+.instagram .card_container .img_container {
   display: flex;
-  gap: 40px ;
+  gap: 40px;
 }
 
 /* instagram css end  */
 
-@media screen and (max-width:990px) {
-  .our_story{
+/* contact css  */
+.contact {
+  margin: 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--color);
+  min-height: 80vh;
+  background-color: #f2f3f5;
+}
+.contact > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact button {
+  cursor: pointer;
+  background-color: var(--blue_background);
+  border: none;
+  outline: none;
+  color: var(--blue);
+  border-radius: 10rem;
+  padding: 1rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.contact .back_font_container {
+  position: relative;
+}
+.contact h2 {
+  font-size: var(--heading);
+}
+.contact .background_font {
+  position: absolute;
+  font-size: var(--back_font);
+  opacity: 0.05;
+}
+.contact p {
+  font-size: var(--small);
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.contact form .input {
+  background-color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 100%;
+}
+.contact form button {
+  cursor: pointer;
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.contact form .input input {
+  border: none;
+  outline: none;
+  /* padding: 15px; */
+}
+
+/* contact css end  */
+
+@media screen and (max-width: 990px) {
+  .our_story {
     margin: 5rem 2rem;
   }
-  .our_story .background_font{
-    font-size: calc(var(--back_font) - 8rem);
+  .our_story .background_font {
+    font-size: calc(var(--back_font) - 8rem - 1px);
   }
-  .our_story h2{
+  .our_story h2 {
     font-size: calc(var(--large));
   }
-  .our_story p{
+  .our_story p {
     width: 80%;
   }
-  .our_story .card_container{
+  .our_story .card_container {
     flex-direction: column;
   }
-  .services{
+  .services {
     margin: 5rem 2rem;
   }
-  .services .background_font{
+  .services .background_font {
     font-size: calc(var(--back_font) - 8rem);
   }
-  .services h2{
-    font-size: calc(var(--large) - 1px);
+  .services h2 {
+    font-size: calc(var(--large) - 2px);
   }
-  .services p{
+  .services p {
     width: 80%;
   }
-  .services .card_container{
+  .services .card_container {
     margin: 0;
     flex-wrap: wrap;
   }
-  .services .card img{
+  .services .card img {
     width: 100%;
   }
-  .instagram{
+  .testimonial {
     margin: 5rem 2rem;
   }
-  .instagram .background_font{
+  .testimonial .background_font {
     font-size: calc(var(--back_font) - 8rem);
   }
-  .instagram h2{
+  .testimonial h2 {
     font-size: calc(var(--large) - 1px);
   }
-  .instagram p{
+  .testimonial p {
     width: 80%;
   }
-  .instagram .card_container{
+  .testimonial .card_container {
     margin: 0;
     flex-wrap: wrap;
   }
-  .instagram .img_container{
+  .testimonial .card img {
+    width: 100%;
+  }
+  .instagram {
+    margin: 5rem 2rem;
+  }
+  .instagram .background_font {
+    font-size: calc(var(--back_font) - 8rem);
+  }
+  .instagram h2 {
+    font-size: calc(var(--large) - 2px);
+  }
+  .instagram p {
+    width: 80%;
+  }
+  .instagram .card_container {
+    margin: 0;
     flex-wrap: wrap;
-    /* flex-direction: column; */
+  }
+  .instagram .img_container {
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contact {
+    margin: 5rem 2rem;
+  }
+  .contact .background_font {
+    font-size: calc(var(--back_font) - 8rem);
+  }
+  .contact h2 {
+    font-size: calc(var(--large) - 1px);
+  }
+  .contact p {
+    width: 80%;
+  }
+  .contact .card_container {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .contact .card img {
+    width: 100%;
   }
 }
 
-@media screen and (max-width:640px) {
-  .our_story p{
+@media screen and (max-width: 640px) {
+  .our_story p {
     width: 100%;
   }
-  .services .card_container{
+  .services .card_container {
     margin: 0;
     flex-direction: column;
   }
-  .services p{
+  .services p {
     width: 100%;
   }
 }
