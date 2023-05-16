@@ -1,563 +1,789 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 body {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  background-color: #f7f8fa;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	background-color: #f7f8fa;
 }
 
 :root {
-  --green: #29cc39;
-  --green_background: #29cc391d;
-  --blue: #3361ff;
-  --blue_background: #3363ff1f;
-  --orange: #ff6633;
-  --orange_background: #ff66331c;
-  --small: 1.4rem;
-  --normal: 1.6rem;
-  --large: 2.4rem;
-  --heading: 3.6rem;
-  --back_font: 15rem;
-  --color: #002881;
-  --shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  --shadow-who: 2px 2px 20px rgba(0, 0, 0, 0.2);
+	--green: #29cc39;
+	--green_background: #29cc391d;
+	--blue: #3361ff;
+	--blue_background: #3363ff1f;
+	--orange: #ff6633;
+	--white: #fff;
+	--orange_background: #ff66331c;
+	--small: 1.4rem;
+	--normal: 1.6rem;
+	--large: 2.4rem;
+	--heading: 3.6rem;
+	--back_font: 15rem;
+	--color: #002881;
+	--shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+	--shadow-who: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* our story css  */
 .our_story {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
 }
 .our_story > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .our_story button {
-  background-color: var(--green_background);
-  border: none;
-  outline: none;
-  color: var(--green);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
+	background-color: var(--green_background);
+	border: none;
+	outline: none;
+	color: var(--green);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
 }
 .our_story .back_font_container {
-  position: relative;
+	position: relative;
 }
 .our_story h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .our_story .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .our_story p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
 .our_story .card_container {
-  gap: 2rem;
+	gap: 2rem;
 }
 .our_story .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 16rem;
-  width: 35rem;
-  gap: 2rem;
-  transition: all 0.2s linear;
-  cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 16rem;
+	width: 35rem;
+	gap: 2rem;
+	transition: all 0.2s linear;
+	cursor: pointer;
 }
 
 .our_story .card:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow);
+	transform: scale(1.05);
+	box-shadow: var(--shadow);
 }
 
 /* our story css end  */
 
 /* services css  */
 .services {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
 }
 .services > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .services button {
-  background-color: var(--blue_background);
-  border: none;
-  outline: none;
-  color: var(--blue);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
+	background-color: var(--blue_background);
+	border: none;
+	outline: none;
+	color: var(--blue);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
 }
 .services .back_font_container {
-  position: relative;
+	position: relative;
 }
 .services h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .services .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .services p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
 .services .card_container {
-  margin: 0 10rem;
+	margin: 0 10rem;
 }
 .services .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s linear;
-  cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s linear;
+	cursor: pointer;
 }
 .services .card img {
-  width: 80%;
+	width: 80%;
 }
 .services .card p {
-  margin-top: -40px;
-  font-weight: 700;
+	margin-top: -40px;
+	font-weight: 700;
 }
 
 /* services css end  */
 
 /* deals css  */
 .deals {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
 }
 .deals > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .deals button {
-  background-color: var(--orange_background);
-  border: none;
-  outline: none;
-  color: var(--orange);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
+	background-color: var(--orange_background);
+	border: none;
+	outline: none;
+	color: var(--orange);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
 }
 .deals .back_font_container {
-  position: relative;
+	position: relative;
 }
 .deals h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .deals .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .deals p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
-
 
 /* deals css end  */
 /* testimonial css  */
 .testimonial {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
 }
 .testimonial > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .testimonial button {
-  background-color: var(--blue_background);
-  border: none;
-  outline: none;
-  color: var(--blue);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
+	background-color: var(--blue_background);
+	border: none;
+	outline: none;
+	color: var(--blue);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
 }
 .testimonial .back_font_container {
-  position: relative;
+	position: relative;
 }
 .testimonial h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .testimonial .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .testimonial p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
 .testimonial .card_container {
-  margin: 0 10rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 20px;
+	margin: 0 10rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
 }
 .testimonial .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  transition: all 0.2s linear;
-  cursor: pointer;
-  gap: 20px;
-  border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	transition: all 0.2s linear;
+	cursor: pointer;
+	gap: 20px;
+	border-radius: 40px;
 }
 .testimonial .card_container .card .text_contain {
-  background-color: white;
-  height: 16rem;
-  width: 35rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background-color: white;
+	height: 16rem;
+	width: 35rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .testimonial .card_container .card .text_contain p {
-  font-weight: 500;
-  line-height: 20px;
+	font-weight: 500;
+	line-height: 20px;
 }
 .testimonial .user {
-  margin: 0 10px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+	margin: 0 10px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
 }
 .testimonial .user .img_contain {
-  border-radius: 100px;
-  overflow: hidden;
+	border-radius: 100px;
+	overflow: hidden;
 }
 .testimonial .user h3 {
-  font-size: calc(var(--large) - 10px);
+	font-size: calc(var(--large) - 10px);
 }
 .testimonial .user p {
-  font-size: var(--nomral);
+	font-size: var(--nomral);
 }
 /* testimonial css end  */
 
 /* instagram css  */
 .instagram {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
 }
 .instagram > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .instagram button {
-  background-color: var(--green_background);
-  border: none;
-  outline: none;
-  color: var(--green);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
+	background-color: var(--green_background);
+	border: none;
+	outline: none;
+	color: var(--green);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
 }
 .instagram .back_font_container {
-  position: relative;
+	position: relative;
 }
 .instagram h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .instagram .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .instagram p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
 .instagram .card_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10rem;
-  flex-direction: column;
-  gap: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10rem;
+	flex-direction: column;
+	gap: 30px;
 }
 .instagram .card_container .img_container {
-  display: flex;
-  gap: 40px;
-  transition: all 0.5s linear;
+	display: flex;
+	gap: 40px;
+	transition: all 0.5s linear;
 }
-.instagram .card_container .img{
-  position: relative;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-
-.instagram .card_container .img:hover:after{
-  transition: all 0.5s linear;
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
+.instagram .card_container .img {
+	position: relative;
+	transition: all 0.5s linear;
+	cursor: pointer;
 }
 
+.instagram .card_container .img:hover:after {
+	transition: all 0.5s linear;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+}
 
 /* instagram css end  */
 
 /* contact css  */
 .contact {
-  margin: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  color: var(--color);
-  min-height: 80vh;
-  background-color: #f2f3f5;
+	margin: 5rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	color: var(--color);
+	min-height: 80vh;
+	background-color: #f2f3f5;
 }
 .contact > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .contact button {
-  background-color: var(--blue_background);
-  border: none;
-  outline: none;
-  color: var(--blue);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+	background-color: var(--blue_background);
+	border: none;
+	outline: none;
+	color: var(--blue);
+	border-radius: 10rem;
+	padding: 1rem;
+	font-weight: 900;
+	margin-bottom: 20px;
 }
 .contact .back_font_container {
-  position: relative;
+	position: relative;
 }
 .contact h2 {
-  font-size: var(--heading);
+	font-size: var(--heading);
 }
 .contact .background_font {
-  position: absolute;
-  font-size: var(--back_font);
-  opacity: 0.05;
+	position: absolute;
+	font-size: var(--back_font);
+	opacity: 0.05;
 }
 .contact p {
-  font-size: var(--small);
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+	font-size: var(--small);
+	width: 60%;
+	text-align: center;
+	line-height: 2rem;
 }
 .contact form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
 }
 .contact form .input {
-  background-color: white;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px;
-  width: 300px;
+	background-color: white;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 50px;
+	width: 300px;
 }
 .contact form button {
-  cursor: pointer;
-  background-color: var(--blue);
-  border: none;
-  outline: none;
-  color: white;
-  border-radius: 10rem;
-  padding: 1.5rem 3rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+	cursor: pointer;
+	background-color: var(--blue);
+	border: none;
+	outline: none;
+	color: white;
+	border-radius: 10rem;
+	padding: 1.5rem 3rem;
+	font-weight: 900;
+	margin-bottom: 20px;
 }
 .contact form .input input {
-  border: none;
-  outline: none;
-  /* padding: 15px; */
-  width: 100%;
+	border: none;
+	outline: none;
+	/* padding: 15px; */
+	width: 100%;
 }
 
 /* contact css end  */
 
 @media screen and (max-width: 990px) {
-  .our_story {
-    margin: 5rem 2rem;
-  }
-  .our_story .background_font {
-    font-size: calc(var(--back_font) - 8rem - 1px);
-  }
-  .our_story h2 {
-    font-size: calc(var(--large));
-  }
-  .our_story p {
-    width: 80%;
-  }
-  .our_story .card_container {
-    flex-direction: column;
-  }
-  .services {
-    margin: 5rem 2rem;
-  }
-  .services .background_font {
-    font-size: calc(var(--back_font) - 8rem);
-  }
-  .services h2 {
-    font-size: calc(var(--large) - 2px);
-  }
-  .services p {
-    width: 80%;
-  }
-  .services .card_container {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .services .card img {
-    width: 100%;
-  }
-  .testimonial {
-    margin: 5rem 2rem;
-  }
-  .testimonial .background_font {
-    font-size: calc(var(--back_font) - 9.3rem);
-  }
-  .testimonial h2 {
-    font-size: calc(var(--large) - 1px);
-  }
-  .testimonial p {
-    width: 80%;
-  }
-  .testimonial .card_container {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .testimonial .card img {
-    width: 100%;
-  }
-  .instagram {
-    margin: 5rem 2rem;
-  }
-  .instagram .background_font {
-    font-size: calc(var(--back_font) - 8rem);
-  }
-  .instagram h2 {
-    font-size: calc(var(--large) - 2px);
-  }
-  .instagram p {
-    width: 80%;
-  }
-  .instagram .card_container {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .instagram .img_container {
-    /* flex-wrap: wrap; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .contact {
-    margin: 5rem 2rem;
-  }
-  .contact .background_font {
-    font-size: calc(var(--back_font) - 8rem);
-  }
-  .contact h2 {
-    font-size: calc(var(--large) - 1px);
-  }
-  .contact p {
-    width: 80%;
-  }
-  .contact .card_container {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .contact .card img {
-    width: 100%;
-  }
+	.our_story {
+		margin: 5rem 2rem;
+	}
+	.our_story .background_font {
+		font-size: calc(var(--back_font) - 8rem - 1px);
+	}
+	.our_story h2 {
+		font-size: calc(var(--large));
+	}
+	.our_story p {
+		width: 80%;
+	}
+	.our_story .card_container {
+		flex-direction: column;
+	}
+	.services {
+		margin: 5rem 2rem;
+	}
+	.services .background_font {
+		font-size: calc(var(--back_font) - 8rem);
+	}
+	.services h2 {
+		font-size: calc(var(--large) - 2px);
+	}
+	.services p {
+		width: 80%;
+	}
+	.services .card_container {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.services .card img {
+		width: 100%;
+	}
+	.testimonial {
+		margin: 5rem 2rem;
+	}
+	.testimonial .background_font {
+		font-size: calc(var(--back_font) - 9.3rem);
+	}
+	.testimonial h2 {
+		font-size: calc(var(--large) - 1px);
+	}
+	.testimonial p {
+		width: 80%;
+	}
+	.testimonial .card_container {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.testimonial .card img {
+		width: 100%;
+	}
+	.instagram {
+		margin: 5rem 2rem;
+	}
+	.instagram .background_font {
+		font-size: calc(var(--back_font) - 8rem);
+	}
+	.instagram h2 {
+		font-size: calc(var(--large) - 2px);
+	}
+	.instagram p {
+		width: 80%;
+	}
+	.instagram .card_container {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.instagram .img_container {
+		/* flex-wrap: wrap; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.contact {
+		margin: 5rem 2rem;
+	}
+	.contact .background_font {
+		font-size: calc(var(--back_font) - 8rem);
+	}
+	.contact h2 {
+		font-size: calc(var(--large) - 1px);
+	}
+	.contact p {
+		width: 80%;
+	}
+	.contact .card_container {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.contact .card img {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 640px) {
-  .our_story p {
-    width: 100%;
-  }
-  .services .card_container {
-    margin: 0;
-    flex-direction: column;
-  }
-  .services p {
-    width: 100%;
-  }
+	.our_story p {
+		width: 100%;
+	}
+	.services .card_container {
+		margin: 0;
+		flex-direction: column;
+	}
+	.services p {
+		width: 100%;
+	}
+}
+
+.h-screen {
+	height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.our_story {
+	display: flex;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.w-fit {
+	width: fit-content;
+}
+
+.w-full {
+	width: 100%;
+}
+
+.h-full {
+	height: 100%;
+}
+
+.w-screen {
+	width: 100vw;
+}
+
+.gap {
+	gap: 20px;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.li-none {
+	list-style: none;
+}
+
+.gap-search {
+	gap: 33px;
+}
+
+.bg-orange {
+	background-color: var(--orange);
+}
+
+.rounded-pill {
+	border-radius: 50px;
+}
+
+.gap-more {
+	gap: 81px;
+}
+
+.mx-2 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.mt-5 {
+	margin-top: 20px;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+nav {
+	margin-top: 6.75rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	background-color: transparent;
+	color: #fff;
+	font-size: var(--small);
+}
+
+#Hero {
+	background-image: url("./assets/images/heroBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.realEstate {
+	color: var(--white);
+	font-size: 12px;
+	padding: 5px 15px;
+	line-height: 20px;
+}
+
+.searchText {
+	opacity: 0.5;
+}
+
+.investText {
+	margin-top: 65px;
+	font-size: 64px;
+	color: var(--white);
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.contactInfo {
+	margin-top: 12.75rem;
+}
+
+.phoneText {
+	font-size: 13px;
+	color: var(--white);
+	text-align: center;
+}
+
+#Footer {
+}
+
+.footerName {
+	font-size: var(--large);
+}
+
+.footerLinks {
+	gap: 53px;
+}
+
+.link {
+	column-gap: 20px;
+	font-size: 13px;
+	color: #7d8fb3;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+	.SeacrhBox,
+	.navLinks,
+	.getInTouchText {
+		display: none;
+	}
+
+	.realEstateBtn {
+		display: none;
+	}
+
+	#Hero {
+		padding-top: 30px;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	/* header {
+		display: none;
+	} */
+
+	nav {
+		padding: 20px 30px;
+	}
+
+	#Hero {
+		padding-top: 30px;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (max-width: 296px) {
+	/* header {
+		display: none;
+	} */
+
+	nav {
+		padding: 20px 30px;
+	}
+
+	.SearchBox {
+		display: none;
+	}
+
+	.investText {
+		font-size: 40px;
+		line-height: 70px;
+		font-weight: bold;
+	}
+
+	#Hero {
+		padding-top: 30px;
+		background-size: cover;
+		background-position: center;
+	}
 }
