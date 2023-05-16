@@ -11,7 +11,8 @@ html{
 }
 
 body{
-  margin: 0 auto;
+  margin: 0 60px;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #F7F8FA;
 }
@@ -32,6 +33,6 @@ body{
 
 
 .our_story{
+  width: 100%;
   display: flex;
-  
 }
